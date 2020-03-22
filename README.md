@@ -46,4 +46,13 @@ The installation was successful. Now everything is ready to create a new django 
 django-admin startproject djangotutorial
 ```
 
-And 
+And now the initial project is ready. I can start it with the following commands:
+
+```bash
+cd djangotutorial
+python manage.py runserver
+```
+
+I can check it in the browser: `http://127.0.0.1:8000/`
+
+At this point, it would worth to make a commit, so that i have done it. Also some ignorable files and patterns were added to a gitignore file and it was committed also.
