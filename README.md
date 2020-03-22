@@ -68,3 +68,11 @@ I am in the project directory (here is the manage.py), so i can run this command
 ```bash
 python manage.py startapp polls
 ```
+
+Let's update (based on [this](https://docs.djangoproject.com/en/3.0/intro/tutorial01/#write-your-first-view) doc) the `polls/views.py` file, create the index route. The respose is static string. After this step, I have to create the `polls/urls.py` file and add there the relevant codeblock. The last step is updating the `djangotutorial/urls.py` file, to register the new path. The app is testable in the browser (`http://127.0.0.1:8000/polls/`) after the server start command.
+
+```bash
+python manage.py runserver
+```
+
+In the meantime, i found that i have committed some `.pyc` files. It's unnecessary, so i removed them with the following command: `git rm --cached \*.pyc` and also the gitignore file was extended with them.
