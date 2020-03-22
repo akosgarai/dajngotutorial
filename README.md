@@ -40,7 +40,11 @@ The output:
 3.0.4
 ```
 
-The installation was successful. Now everything is ready to create a new django project. I have done it with this command:
+The installation was successful.
+
+### Create project
+
+Now everything is ready to create a new django project. I have done it with this command:
 
 ```bash
 django-admin startproject djangotutorial
@@ -56,3 +60,11 @@ python manage.py runserver
 I can check it in the browser: `http://127.0.0.1:8000/`
 
 At this point, it would worth to make a commit, so that i have done it. Also some ignorable files and patterns were added to a gitignore file and it was committed also.
+
+### Create application
+
+I am in the project directory (here is the manage.py), so i can run this command to create the `polls` application:
+
+```bash
+python manage.py startapp polls
+```
