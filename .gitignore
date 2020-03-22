@@ -1,2 +1,7 @@
 *.swp
 tags
+
+*.py[cod]
+__pycache__
+db.sqlite3
+media
