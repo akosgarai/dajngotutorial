@@ -1,0 +1,49 @@
+# Django related documentation
+
+I want to know how the django framework works. Due to this, i'm following [this](https://docs.djangoproject.com/en/3.0/) tutorial, to play around with this stuff.
+
+## What have i done?
+
+I already have python, so i don't need to setup it. Only the virtualenv is necessary to be created, so i followed the tutorial, and created it with the following command:
+
+```bash
+python3 -m venv ~/.virtualenvs/djangodev
+```
+
+I activated the environment with the following command:
+
+```bash
+source ~/.virtualenvs/djangodev/bin/activate
+```
+
+After the activation, the env name is visible in the terminal:
+
+```bash
+(djangodev) akosgarai@akos-szemetlada ~/Documents/prog/python $
+```
+
+Now i can use the python command insteead of python3. Also everything is ready to install the django:
+
+```bash
+python -m pip install Django
+```
+
+Finally let's check that the instalation was successful or not. I can try to get the version of the installed django:
+
+```bash
+python -m django --version
+```
+
+The output:
+
+```bash
+3.0.4
+```
+
+The installation was successful. Now everything is ready to create a new django project. I have done it with this command:
+
+```bash
+django-admin startproject djangotutorial
+```
+
+And 
