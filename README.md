@@ -76,3 +76,39 @@ python manage.py runserver
 ```
 
 In the meantime, i found that i have committed some `.pyc` files. It's unnecessary, so i removed them with the following command: `git rm --cached \*.pyc` and also the gitignore file was extended with them.
+
+### Database setup
+
+The implementation is based on [this](https://docs.djangoproject.com/en/3.0/intro/tutorial02/#database-setup) and [this](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-django-with-postgres-nginx-and-gunicorn) tutorials.
+
+Switch to postgres user.
+
+```bash
+sudo su - postgres
+```
+
+Create the database.
+
+```bash
+createdb djangotutorial
+```
+
+Login to db with psql command.
+
+```bash
+psql
+```
+
+Create a new user to the database.
+
+```bash
+CREATE USER djangotutorial WITH ENCRYPTED PASSWORD 'password-is-here';
+```
+
+And finally grant privileges to the user.
+
+```bash
+GRANT ALL PRIVILEGES ON DATABASE djangotutorial TO djangotutorial;
+```
+
+Now we have the empty db.
