@@ -111,4 +111,21 @@ And finally grant privileges to the user.
 GRANT ALL PRIVILEGES ON DATABASE djangotutorial TO djangotutorial;
 ```
 
-Now we have the empty db.
+Now we have the empty db. Let's get some content. In the project directory, we can migrate the database.
+
+```bash
+python manage.py migrate
+```
+
+This command returned with error. I have missing dependencies. (python psycopg2, and some apt-get stuff)
+
+```bash
+sudo apt-get install libpq-dev
+python -m pip install psycopg2
+```
+
+After it, the migrate command has to worked well.
+
+```bash
+python manage.py migrate
+```
