@@ -143,3 +143,7 @@ python manage.py migrate
 ```
 
 With the django shell (`python manage.py shell`) i can define questions and choises. To make the models more readable in the shell, we can implement the `__str__` functions. The `was_published_recently` function is an example of a custom function. It returns some new questions, where the pub\_date is in one day.
+
+### Admin interface
+
+After creating an admin user (based on the documentation), i need to attach the polls app to the admin interface. I can do this with updating the `polls/admin.py` file.
