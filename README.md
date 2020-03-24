@@ -129,3 +129,15 @@ After it, the migrate command has to worked well.
 ```bash
 python manage.py migrate
 ```
+
+Now we can define some models in the `polls/models.py`. Then we have to register the polls application to our `djangotutorial/settings.py` file. The name of the application (PollsConfig) is coming from the `polls/apps.py`. Now we can create db migration files fit the following command:
+
+```bash
+python manage.py makemigrations polls
+```
+
+And the actual migration with the `migrate` command:
+
+```bash
+python manage.py migrate
+```
