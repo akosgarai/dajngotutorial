@@ -155,3 +155,7 @@ We can create views to our application. The views needs to be attached to endpoi
 ### Tests
 
 As i discovered, the `djangotutorial` user can't create database. To solve this issue, the grants has been added to it. (postgres user, psql console: `ALTER USER djangotutorial CREATEDB;`) As far as i see, the test writing is obvious.
+
+### Static content
+
+It has to be added under the application directory, same level as template dir. (eg: `polls/static/`) For example the css file supposed to be added to here: `polls/static/polls/style.css`. We can load the static content from the html templates.
