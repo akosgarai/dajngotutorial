@@ -146,4 +146,4 @@ With the django shell (`python manage.py shell`) i can define questions and choi
 
 ### Admin interface
 
-After creating an admin user (based on the documentation), i need to attach the polls app to the admin interface. I can do this with updating the `polls/admin.py` file.
+After creating an admin user (based on the documentation), i need to attach the polls app to the admin interface. I can do this with updating the `polls/admin.py` file. We can create views to our application.
