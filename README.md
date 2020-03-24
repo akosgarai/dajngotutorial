@@ -152,3 +152,6 @@ After creating an admin user (based on the documentation), i need to attach the 
 
 We can create views to our application. The views needs to be attached to endpoints. We are able to display the data in django templates. To do this, we have to make a `templates` directory in the application dir. We also have to make a `polls` directory insite the newly created template dir. I can put the view templates here. We can rase 404 exceptions, and we can display error page if the content is missing (not found in the db). We can do this with shortcuts. We can handle the POST method in the view. According to the gossips, the generic view is a better stuff, to that it's time to refactor the application.
 
+### Tests
+
+As i discovered, the `djangotutorial` user can't create database. To solve this issue, the grants has been added to it. (postgres user, psql console: `ALTER USER djangotutorial CREATEDB;`) As far as i see, the test writing is obvious.
